@@ -1,6 +1,5 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
-    margin: 0 10%;
 }
 
 div {
@@ -142,15 +141,36 @@ p {
     margin: 4px 2px;
     cursor: pointer;
     width: 10rem;
-  }
+}
 
-.btnRegresar {
+.button-MenuPrincipal {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 9rem;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.button-Regresar {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
     width: 10rem;
-    height: 3rem;
     margin: 0 auto;
     text-decoration: none;
-    color: white;
 }
   
 .btnBlack {background-color: black;}
@@ -161,8 +181,82 @@ p {
 .btnPink {background-color: #d957d9;}
 .btnBeige {background-color: #efd9ca;}
 
-.formateo-panel {
+.formateo-panel{
     display: flex;
     justify-content: center;
     margin: 0;
+}
+
+.color-container {
+    width: 100%;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 0.25rem;
+    min-height: 100px;
+}
+
+/* Using grid
+.principalButtons-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: scroll;
+}
+*/
+
+/* Using box-model */
+.principalButtons-container {
+    width: 100%;
+}
+
+.topic-container, .top-container {
+    margin: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #008CBA;    
+}
+
+.pagina {
+    margin: 0 10%;
+}
+
+.topic-container h1 {
+    display: inline-block; 
+    margin-right: 2%; 
+    text-align: center;
+    line-height: -10px;
+    position: relative;
+    top: 0.3rem;
+}
+
+.topic-container .container {
+    display:inline-block; 
+    border: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+.title {
+    display: flex; 
+    justify-content: center;
+    margin: 1.5% 0;
+}
+
+.topic-container h1 {
+    display: inline-block; 
+    margin-right: 2%; 
+    text-align: center;
+    width: 25%;
+}
+
+.container-panel {
+    display:inline-block; 
+    border: none; 
+    margin: 0; 
+    padding: 0;
 }
