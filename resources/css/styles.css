@@ -213,7 +213,7 @@ p {
     width: 100%;
 }
 
-.topic-container, .top-container {
+.topic-container/*, .top-container*/ {
     margin: 0;
     border-top: none;
     border-right: none;
@@ -223,6 +223,8 @@ p {
 
 .pagina {
     margin: 0 10%;
+    position: relative;
+    top: 5rem;
 }
 
 .topic-container h1, .top-container h1 {
@@ -241,10 +243,26 @@ p {
     padding: 0;
 }
 
-.title {
-    display: flex; 
-    justify-content: center;
-    margin: 1% 0 0 0;
+.header, .top-container {
+    position: fixed;
+    /* center the element */
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 3px solid #008CBA;
+}
+
+.main {
+    text-align: center;
+    position: relative;
+    top: 5rem;
 }
 
 .topic-container h1 {
